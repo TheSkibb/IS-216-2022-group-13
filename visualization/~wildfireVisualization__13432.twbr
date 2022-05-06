@@ -1,0 +1,2234 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0324.2209                               -->
+<workbook original-version='18.1' source-build='2022.1.0 (20221.22.0324.2209)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='0' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='0.0'>
+        <calculation class='tableau' formula='0.0' />
+      </column>
+    </datasource>
+    <datasource caption='aqi_by_county_1992_to_2015' inline='true' name='federated.0sw2w0q0vkazve1cdjwpa1f20x8h' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='aqi_by_county_1992_to_2015' name='textscan.08n4no01k9f3dk113n0yv0siko0b'>
+            <connection class='textscan' directory='C:/Users/Kristian/Documents/Skolearbeid UiA/semester 3/IS-216/wildFireStuff/dataset' filename='aqi_by_county_1992_to_2015.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.08n4no01k9f3dk113n0yv0siko0b' name='aqi_by_county_1992_to_2015.csv' table='[aqi_by_county_1992_to_2015#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='nb_NO'>
+            <column datatype='string' name='State Name' ordinal='0' />
+            <column datatype='string' name='county Name' ordinal='1' />
+            <column datatype='integer' name='State Code' ordinal='2' />
+            <column datatype='integer' name='County Code' ordinal='3' />
+            <column datatype='date' name='Date' ordinal='4' />
+            <column datatype='integer' name='AQI' ordinal='5' />
+            <column datatype='string' name='Category' ordinal='6' />
+            <column datatype='string' name='Defining Parameter' ordinal='7' />
+            <column datatype='date' name='Defining Site' ordinal='8' />
+            <column datatype='integer' name='Number of Sites Reporting' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.08n4no01k9f3dk113n0yv0siko0b' name='aqi_by_county_1992_to_2015.csv' table='[aqi_by_county_1992_to_2015#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='nb_NO'>
+            <column datatype='string' name='State Name' ordinal='0' />
+            <column datatype='string' name='county Name' ordinal='1' />
+            <column datatype='integer' name='State Code' ordinal='2' />
+            <column datatype='integer' name='County Code' ordinal='3' />
+            <column datatype='date' name='Date' ordinal='4' />
+            <column datatype='integer' name='AQI' ordinal='5' />
+            <column datatype='string' name='Category' ordinal='6' />
+            <column datatype='string' name='Defining Parameter' ordinal='7' />
+            <column datatype='date' name='Defining Site' ordinal='8' />
+            <column datatype='integer' name='Number of Sites Reporting' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;kr&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;nb_NO&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State Name]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>State Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_2D28D201C0BD4F35A96D13287CAE4D27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county Name]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>county Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_2D28D201C0BD4F35A96D13287CAE4D27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[State Code]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>State Code</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_2D28D201C0BD4F35A96D13287CAE4D27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[County Code]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>County Code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_2D28D201C0BD4F35A96D13287CAE4D27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_2D28D201C0BD4F35A96D13287CAE4D27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AQI</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AQI]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>AQI</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_2D28D201C0BD4F35A96D13287CAE4D27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_2D28D201C0BD4F35A96D13287CAE4D27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Defining Parameter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Defining Parameter]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>Defining Parameter</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_2D28D201C0BD4F35A96D13287CAE4D27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Defining Site</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Defining Site]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>Defining Site</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_2D28D201C0BD4F35A96D13287CAE4D27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Sites Reporting</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Sites Reporting]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>Number of Sites Reporting</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_2D28D201C0BD4F35A96D13287CAE4D27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='avarageAQI' datatype='real' name='[Calculation_297237604399964161]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(AQI)/COUNT([Date])' />
+      </column>
+      <column datatype='integer' name='[County Code]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[State Code]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[State Name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='aqi_by_county_1992_to_2015.csv' datatype='table' name='[__tableau_internal_object_id__].[aqi_by_county_1992_to_2015.csv_2D28D201C0BD4F35A96D13287CAE4D27]' role='measure' type='quantitative' />
+      <column datatype='string' name='[county Name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[county Name]' derivation='None' name='[none:county Name:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='State Name, county Name'>
+          <field>[State Name]</field>
+          <field>[county Name]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:county Name:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;El Dorado&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Nevada&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Sonoma&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alameda&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Marin&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;San Mateo&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Calaveras&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Modoc&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Shasta&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Imperial&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Riverside&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Trinity&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Fresno&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Orange&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Stanislaus&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Colusa&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mono&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sierra&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Los Angeles&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;San Joaquin&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alpine&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Mariposa&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Santa Barbara&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Lake&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;San Diego&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Yolo&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Contra Costa&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Monterey&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Siskiyou&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Inyo&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sacramento&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Tulare&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Kern&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;San Benito&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Tuolumne&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Lassen&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;San Francisco&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Madera&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;San Luis Obispo&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Glenn&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Placer&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sutter&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Del Norte&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Napa&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Solano&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Amador&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mendocino&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Santa Clara&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Kings&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;San Bernardino&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ventura&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Humboldt&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Plumas&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tehama&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Butte&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Merced&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Santa Cruz&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[County].[Name]' value='%null%' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='aqi_by_county_1992_to_2015.csv' id='aqi_by_county_1992_to_2015.csv_2D28D201C0BD4F35A96D13287CAE4D27'>
+            <properties context=''>
+              <relation connection='textscan.08n4no01k9f3dk113n0yv0siko0b' name='aqi_by_county_1992_to_2015.csv' table='[aqi_by_county_1992_to_2015#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='nb_NO'>
+                  <column datatype='string' name='State Name' ordinal='0' />
+                  <column datatype='string' name='county Name' ordinal='1' />
+                  <column datatype='integer' name='State Code' ordinal='2' />
+                  <column datatype='integer' name='County Code' ordinal='3' />
+                  <column datatype='date' name='Date' ordinal='4' />
+                  <column datatype='integer' name='AQI' ordinal='5' />
+                  <column datatype='string' name='Category' ordinal='6' />
+                  <column datatype='string' name='Defining Parameter' ordinal='7' />
+                  <column datatype='date' name='Defining Site' ordinal='8' />
+                  <column datatype='integer' name='Number of Sites Reporting' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='wildfires' inline='true' name='federated.1qgrihb1gzjmuy10dic5u1lpma9o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Result_15' name='textscan.1hd5e3d0j2yvuo1dp4zoj1adzinv'>
+            <connection class='textscan' directory='C:/Users/Kristian/Documents/Skolearbeid UiA/semester 3/IS-216/wildFireStuff/dataset' filename='Result_15.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='aqi_by_county_1992_to_2015' name='textscan.06eeblk05pd40x19reg10026j8hl'>
+            <connection class='textscan' directory='C:/Users/Kristian/Documents/Skolearbeid UiA/semester 3/IS-216/wildFireStuff/dataset' filename='aqi_by_county_1992_to_2015.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1hd5e3d0j2yvuo1dp4zoj1adzinv' name='Result_15.csv' table='[Result_15#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='nb_NO'>
+            <column datatype='integer' name='FOD_ID' ordinal='0' />
+            <column datatype='string' name='FPA_ID' ordinal='1' />
+            <column datatype='string' name='STATE' ordinal='2' />
+            <column datatype='string' name='FIRE_NAME' ordinal='3' />
+            <column datatype='date' name='DATE(DISCOVERY_DATE)' ordinal='4' />
+            <column datatype='date' name='date(CONT_DATE)' ordinal='5' />
+            <column datatype='integer' name='FIRE_YEAR' ordinal='6' />
+            <column datatype='real' name='LONGITUDE' ordinal='7' />
+            <column datatype='real' name='LATITUDE' ordinal='8' />
+            <column datatype='real' name='FIRE_SIZE' ordinal='9' />
+            <column datatype='string' name='COUNTY' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1hd5e3d0j2yvuo1dp4zoj1adzinv' name='Result_15.csv' table='[Result_15#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='nb_NO'>
+              <column datatype='integer' name='FOD_ID' ordinal='0' />
+              <column datatype='string' name='FPA_ID' ordinal='1' />
+              <column datatype='string' name='STATE' ordinal='2' />
+              <column datatype='string' name='FIRE_NAME' ordinal='3' />
+              <column datatype='date' name='DATE(DISCOVERY_DATE)' ordinal='4' />
+              <column datatype='date' name='date(CONT_DATE)' ordinal='5' />
+              <column datatype='integer' name='FIRE_YEAR' ordinal='6' />
+              <column datatype='real' name='LONGITUDE' ordinal='7' />
+              <column datatype='real' name='LATITUDE' ordinal='8' />
+              <column datatype='real' name='FIRE_SIZE' ordinal='9' />
+              <column datatype='string' name='COUNTY' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='textscan.06eeblk05pd40x19reg10026j8hl' name='aqi_by_county_1992_to_2015.csv' table='[aqi_by_county_1992_to_2015#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='nb_NO'>
+              <column datatype='string' name='State Name' ordinal='0' />
+              <column datatype='string' name='county Name' ordinal='1' />
+              <column datatype='integer' name='State Code' ordinal='2' />
+              <column datatype='integer' name='County Code' ordinal='3' />
+              <column datatype='date' name='Date' ordinal='4' />
+              <column datatype='integer' name='AQI' ordinal='5' />
+              <column datatype='string' name='Category' ordinal='6' />
+              <column datatype='string' name='Defining Parameter' ordinal='7' />
+              <column datatype='date' name='Defining Site' ordinal='8' />
+              <column datatype='integer' name='Number of Sites Reporting' ordinal='9' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Result_15.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;kr&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;nb_NO&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;kr&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;nb_NO&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FOD_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FOD_ID]</local-name>
+            <parent-name>[Result_15.csv]</parent-name>
+            <remote-alias>FOD_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Result_15.csv_CC1D83D64D6549B989857E2DDE72B15A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FPA_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FPA_ID]</local-name>
+            <parent-name>[Result_15.csv]</parent-name>
+            <remote-alias>FPA_ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Result_15.csv_CC1D83D64D6549B989857E2DDE72B15A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATE]</local-name>
+            <parent-name>[Result_15.csv]</parent-name>
+            <remote-alias>STATE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Result_15.csv_CC1D83D64D6549B989857E2DDE72B15A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIRE_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FIRE_NAME]</local-name>
+            <parent-name>[Result_15.csv]</parent-name>
+            <remote-alias>FIRE_NAME</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Result_15.csv_CC1D83D64D6549B989857E2DDE72B15A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DATE(DISCOVERY_DATE)</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DATE(DISCOVERY_DATE)]</local-name>
+            <parent-name>[Result_15.csv]</parent-name>
+            <remote-alias>DATE(DISCOVERY_DATE)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Result_15.csv_CC1D83D64D6549B989857E2DDE72B15A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date(CONT_DATE)</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date(CONT_DATE)]</local-name>
+            <parent-name>[Result_15.csv]</parent-name>
+            <remote-alias>date(CONT_DATE)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Result_15.csv_CC1D83D64D6549B989857E2DDE72B15A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIRE_YEAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FIRE_YEAR]</local-name>
+            <parent-name>[Result_15.csv]</parent-name>
+            <remote-alias>FIRE_YEAR</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Result_15.csv_CC1D83D64D6549B989857E2DDE72B15A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LONGITUDE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LONGITUDE]</local-name>
+            <parent-name>[Result_15.csv]</parent-name>
+            <remote-alias>LONGITUDE</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Result_15.csv_CC1D83D64D6549B989857E2DDE72B15A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LATITUDE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LATITUDE]</local-name>
+            <parent-name>[Result_15.csv]</parent-name>
+            <remote-alias>LATITUDE</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Result_15.csv_CC1D83D64D6549B989857E2DDE72B15A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIRE_SIZE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FIRE_SIZE]</local-name>
+            <parent-name>[Result_15.csv]</parent-name>
+            <remote-alias>FIRE_SIZE</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Result_15.csv_CC1D83D64D6549B989857E2DDE72B15A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTY]</local-name>
+            <parent-name>[Result_15.csv]</parent-name>
+            <remote-alias>COUNTY</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Result_15.csv_CC1D83D64D6549B989857E2DDE72B15A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State Name]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>State Name</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_FFBEAA1BFC294CBBBF8BDE564C3F975F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county Name]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>county Name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_FFBEAA1BFC294CBBBF8BDE564C3F975F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[State Code]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>State Code</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_FFBEAA1BFC294CBBBF8BDE564C3F975F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[County Code]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>County Code</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_FFBEAA1BFC294CBBBF8BDE564C3F975F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_FFBEAA1BFC294CBBBF8BDE564C3F975F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AQI</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AQI]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>AQI</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_FFBEAA1BFC294CBBBF8BDE564C3F975F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_FFBEAA1BFC294CBBBF8BDE564C3F975F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Defining Parameter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Defining Parameter]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>Defining Parameter</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_FFBEAA1BFC294CBBBF8BDE564C3F975F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Defining Site</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Defining Site]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>Defining Site</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_FFBEAA1BFC294CBBBF8BDE564C3F975F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Sites Reporting</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Sites Reporting]</local-name>
+            <parent-name>[aqi_by_county_1992_to_2015.csv]</parent-name>
+            <remote-alias>Number of Sites Reporting</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[aqi_by_county_1992_to_2015.csv_FFBEAA1BFC294CBBBF8BDE564C3F975F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[COUNTY]' role='dimension' type='nominal' />
+      <column caption='avarage Aqi' datatype='real' name='[Calculation_1960473243115020300]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(AQI)/COUNT([Date])' />
+      </column>
+      <column caption='correlation' datatype='real' name='[Calculation_1960473243117178894]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CORR([FIRE_SIZE], [AQI])' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[County Code]' role='dimension' semantic-role='[County].[Name]' type='ordinal' />
+      <column datatype='integer' name='[FIRE_YEAR]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[FOD_ID]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' datatype='real' name='[LATITUDE]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[LONGITUDE]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[State Code]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[State Name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Result_15.csv' datatype='table' name='[__tableau_internal_object_id__].[Result_15.csv_CC1D83D64D6549B989857E2DDE72B15A]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='aqi_by_county_1992_to_2015.csv' datatype='table' name='[__tableau_internal_object_id__].[aqi_by_county_1992_to_2015.csv_FFBEAA1BFC294CBBBF8BDE564C3F975F]' role='measure' type='quantitative' />
+      <column datatype='string' name='[county Name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column-instance column='[COUNTY]' derivation='None' name='[none:COUNTY:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+      <column-instance column='[county Name]' derivation='None' name='[none:county Name:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='0.943201' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.0567986' show-hidden-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:county Name:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;El Dorado&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Placer&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Tehama&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alameda&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mariposa&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Santa Clara&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Calaveras&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Monterey&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Solano&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Imperial&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;San Benito&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ventura&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Fresno&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Plumas&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Trinity&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Colusa&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Modoc&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Napa&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sonoma&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Lassen&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Madera&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;San Mateo&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alpine&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Mendocino&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Santa Cruz&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Lake&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;San Joaquin&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Contra Costa&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Nevada&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sierra&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Stanislaus&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Inyo&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;San Bernardino&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Yolo&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Kern&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;San Diego&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Los Angeles&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;San Luis Obispo&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Marin&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Santa Barbara&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Glenn&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Riverside&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tulare&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Del Norte&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Orange&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sutter&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Amador&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Merced&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Shasta&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Kings&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;San Francisco&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Humboldt&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sacramento&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tuolumne&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Butte&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mono&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Siskiyou&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:STATE:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;CA&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:COUNTY:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Del Norte&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Monterey&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Siskiyou&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Los Angeles&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;San Joaquin&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Butte&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mendocino&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Santa Clara&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Glenn&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Placer&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sutter&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Douglas&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Napa&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Solano&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Calaveras&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Merced&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Santa Cruz&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Lake&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;San Diego&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Yolo&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alameda&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Madera&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;San Luis Obispo&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kern&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;San Benito&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tuolumne&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Colusa&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Modoc&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Shasta&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Humboldt&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Plumas&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Tehama&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Imperial&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Riverside&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Trinity&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kings&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;San Bernardino&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ventura&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Lassen&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;San Francisco&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Yuba&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;El Dorado&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Nevada&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sonoma&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Contra Costa&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mono&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sierra&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Alpine&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Marin&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;San Mateo&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Inyo&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sacramento&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Tulare&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Fresno&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Orange&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Stanislaus&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Amador&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mariposa&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Santa Barbara&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:STATE:nk]&#10;[none:Forecast Indicator:nk]' type='palette'>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;AK&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;GA&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;MD&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;NH&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;RI&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;WV&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;FL&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;MA&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;NE&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;PR&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;WI&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;AZ&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;ID&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;MN&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;NV&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;TN&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;CT&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;KS&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;MT&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;OK&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;VA&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;AR&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;IA&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;MI&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;NM&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;SD&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;AL&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;HI&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;ME&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;NJ&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;SC&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;WY&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;DC&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;KY&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;NC&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;OR&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;VT&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;DE&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;LA&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;ND&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;PA&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;WA&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;CO&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;IN&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;MS&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;OH&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;UT&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;CA&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;IL&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;MO&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;NY&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;TX&quot;</bucket>
+            </map-pri>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Norway&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Result_15.csv' id='Result_15.csv_CC1D83D64D6549B989857E2DDE72B15A'>
+            <properties context=''>
+              <relation connection='textscan.1hd5e3d0j2yvuo1dp4zoj1adzinv' name='Result_15.csv' table='[Result_15#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='nb_NO'>
+                  <column datatype='integer' name='FOD_ID' ordinal='0' />
+                  <column datatype='string' name='FPA_ID' ordinal='1' />
+                  <column datatype='string' name='STATE' ordinal='2' />
+                  <column datatype='string' name='FIRE_NAME' ordinal='3' />
+                  <column datatype='date' name='DATE(DISCOVERY_DATE)' ordinal='4' />
+                  <column datatype='date' name='date(CONT_DATE)' ordinal='5' />
+                  <column datatype='integer' name='FIRE_YEAR' ordinal='6' />
+                  <column datatype='real' name='LONGITUDE' ordinal='7' />
+                  <column datatype='real' name='LATITUDE' ordinal='8' />
+                  <column datatype='real' name='FIRE_SIZE' ordinal='9' />
+                  <column datatype='string' name='COUNTY' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='aqi_by_county_1992_to_2015.csv' id='aqi_by_county_1992_to_2015.csv_FFBEAA1BFC294CBBBF8BDE564C3F975F'>
+            <properties context=''>
+              <relation connection='textscan.06eeblk05pd40x19reg10026j8hl' name='aqi_by_county_1992_to_2015.csv' table='[aqi_by_county_1992_to_2015#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='nb_NO'>
+                  <column datatype='string' name='State Name' ordinal='0' />
+                  <column datatype='string' name='county Name' ordinal='1' />
+                  <column datatype='integer' name='State Code' ordinal='2' />
+                  <column datatype='integer' name='County Code' ordinal='3' />
+                  <column datatype='date' name='Date' ordinal='4' />
+                  <column datatype='integer' name='AQI' ordinal='5' />
+                  <column datatype='string' name='Category' ordinal='6' />
+                  <column datatype='string' name='Defining Parameter' ordinal='7' />
+                  <column datatype='date' name='Defining Site' ordinal='8' />
+                  <column datatype='integer' name='Number of Sites Reporting' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[date(CONT_DATE)]' />
+              <expression op='[Date]' />
+            </expression>
+            <first-end-point object-id='Result_15.csv_CC1D83D64D6549B989857E2DDE72B15A' />
+            <second-end-point object-id='aqi_by_county_1992_to_2015.csv_FFBEAA1BFC294CBBBF8BDE564C3F975F' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D7C1A524-EC61-446A-8B01-8CF48679BFF6}' />
+    </worksheet>
+    <worksheet name='Wildfires'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>wildfires</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wildfires' name='federated.1qgrihb1gzjmuy10dic5u1lpma9o' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1qgrihb1gzjmuy10dic5u1lpma9o'>
+            <column datatype='string' name='[COUNTY]' role='dimension' type='nominal' />
+            <column datatype='date' name='[DATE(DISCOVERY_DATE)]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[FIRE_NAME]' role='dimension' type='nominal' />
+            <column datatype='real' name='[FIRE_SIZE]' role='measure' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[LATITUDE]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[LONGITUDE]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[LATITUDE]' derivation='Avg' name='[avg:LATITUDE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[LONGITUDE]' derivation='Avg' name='[avg:LONGITUDE:qk]' pivot='key' type='quantitative' />
+            <column datatype='date' name='[date(CONT_DATE)]' role='dimension' type='ordinal' />
+            <column-instance column='[date(CONT_DATE)]' derivation='Month' name='[mn:date(CONT_DATE):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[COUNTY]' derivation='None' name='[none:COUNTY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[FIRE_NAME]' derivation='None' name='[none:FIRE_NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[FIRE_SIZE]' derivation='Sum' name='[sum:FIRE_SIZE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DATE(DISCOVERY_DATE)]' derivation='Month-Trunc' name='[tmn:DATE(DISCOVERY_DATE):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date(CONT_DATE)]' derivation='Month-Trunc' name='[tmn:date(CONT_DATE):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:STATE:nk]'>
+            <groupfilter function='member' level='[none:STATE:nk]' member='&quot;CA&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:STATE:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[avg:LONGITUDE:qk]' field-type='quantitative' max='-12136266.409067594' min='-14468416.384284452' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[avg:LATITUDE:qk]' field-type='quantitative' max='5220511.8516282625' min='3765781.799723912' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[sum:FIRE_SIZE:qk]' max='10000.0' num-steps='11' palette='red_10_0' type='interpolated' />
+            <encoding attr='size' field='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[sum:FIRE_SIZE:qk]' field-type='quantitative' max='100000.0' max-size='1' min-size='0.00547738' type='rangesize' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='normal' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[sum:FIRE_SIZE:qk]' />
+              <size column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[sum:FIRE_SIZE:qk]' />
+              <lod column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[tmn:DATE(DISCOVERY_DATE):qk]' />
+              <lod column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[mn:date(CONT_DATE):ok]' />
+              <lod column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[sum:FIRE_SIZE:qk]' />
+              <lod column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:FIRE_NAME:nk]' />
+              <lod column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:COUNTY:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='3.7900552749633789' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#e15759' />
+                <format attr='has-halo' value='false' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[avg:LATITUDE:qk]</rows>
+        <cols>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[avg:LONGITUDE:qk]</cols>
+        <pages>
+          <column>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[tmn:date(CONT_DATE):ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{DDBFD2DF-14CC-46D8-8CEE-29031A1E9D8E}' />
+    </worksheet>
+    <worksheet name='acreCA'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Acres Burned California&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wildfires' name='federated.1qgrihb1gzjmuy10dic5u1lpma9o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qgrihb1gzjmuy10dic5u1lpma9o'>
+            <column datatype='real' name='[FIRE_SIZE]' role='measure' type='quantitative' />
+            <column datatype='date' name='[date(CONT_DATE)]' role='dimension' type='ordinal' />
+            <column-instance column='[FIRE_SIZE]' derivation='Sum' forecast-column-base='[sum:FIRE_SIZE:qk]' forecast-column-type='forecast-value' name='[fVal:sum:FIRE_SIZE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[FIRE_SIZE]' derivation='Sum' name='[sum:FIRE_SIZE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date(CONT_DATE)]' derivation='Month-Trunc' name='[tmn:date(CONT_DATE):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date(CONT_DATE)]' derivation='Year' name='[yr:date(CONT_DATE):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[yr:date(CONT_DATE):ok]'>
+            <groupfilter from='1992' function='range' level='[yr:date(CONT_DATE):ok]' to='2015' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[yr:date(CONT_DATE):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[fVal:sum:FIRE_SIZE:qk]' scope='rows' value='acres burned' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:Forecast Indicator:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[fVal:sum:FIRE_SIZE:qk]</rows>
+        <cols>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[tmn:date(CONT_DATE):qk]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='1' model-type='auto-season' range-periods='Year-Trunc' range-size='4' range-type='next' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{CA41AAFA-86CC-4467-85A4-4160C3561EED}' />
+    </worksheet>
+    <worksheet name='air Quality'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='aqi_by_county_1992_to_2015' name='federated.0sw2w0q0vkazve1cdjwpa1f20x8h' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0sw2w0q0vkazve1cdjwpa1f20x8h'>
+            <column datatype='integer' name='[AQI]' role='measure' type='quantitative' />
+            <column caption='avarageAQI' datatype='real' name='[Calculation_297237604399964161]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(AQI)/COUNT([Date])' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[State Name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[county Name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[State Name]' derivation='None' name='[none:State Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[county Name]' derivation='None' name='[none:county Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_297237604399964161]' derivation='User' name='[usr:Calculation_297237604399964161:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0sw2w0q0vkazve1cdjwpa1f20x8h].[Longitude (generated)]' field-type='quantitative' max='-12105599.040646167' min='-14408977.034960248' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0sw2w0q0vkazve1cdjwpa1f20x8h].[Latitude (generated)]' field-type='quantitative' max='5227644.2180690449' min='3818930.5423293728' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0sw2w0q0vkazve1cdjwpa1f20x8h].[usr:Calculation_297237604399964161:qk]' max='301.0' min='0.0' num-steps='6' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0sw2w0q0vkazve1cdjwpa1f20x8h].[usr:Calculation_297237604399964161:qk]' />
+              <lod column='[federated.0sw2w0q0vkazve1cdjwpa1f20x8h].[none:State Name:nk]' />
+              <lod column='[federated.0sw2w0q0vkazve1cdjwpa1f20x8h].[none:county Name:nk]' />
+              <lod column='[federated.0sw2w0q0vkazve1cdjwpa1f20x8h].[usr:Calculation_297237604399964161:qk]' />
+              <geometry column='[federated.0sw2w0q0vkazve1cdjwpa1f20x8h].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0sw2w0q0vkazve1cdjwpa1f20x8h].[Latitude (generated)]</rows>
+        <cols>[federated.0sw2w0q0vkazve1cdjwpa1f20x8h].[Longitude (generated)]</cols>
+        <pages>
+          <column>[federated.0sw2w0q0vkazve1cdjwpa1f20x8h].[tmn:Date:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{D488B83C-B859-45F0-8937-529DE3172B10}' />
+    </worksheet>
+    <worksheet name='airCA'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>air quality California</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wildfires' name='federated.1qgrihb1gzjmuy10dic5u1lpma9o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qgrihb1gzjmuy10dic5u1lpma9o'>
+            <column datatype='integer' name='[AQI]' role='measure' type='quantitative' />
+            <column caption='avarage Aqi' datatype='real' name='[Calculation_1960473243115020300]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(AQI)/COUNT([Date])' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1960473243115020300]' derivation='User' name='[usr:Calculation_1960473243115020300:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[yr:Date:ok]'>
+            <groupfilter from='1992' function='range' level='[yr:Date:ok]' to='2015' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[usr:Calculation_1960473243115020300:qk]' scope='rows' value='avarage AQI' />
+            <format attr='title' class='0' field='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[tmn:Date:qk]' scope='cols' value='date' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='exp' />
+          </pane>
+        </panes>
+        <rows>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[usr:Calculation_1960473243115020300:qk]</rows>
+        <cols>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[tmn:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{C2154A3C-949F-49B0-8303-89C6731CDF65}' />
+    </worksheet>
+    <worksheet name='airQualityGraph'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>AirQuality graph</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wildfires' name='federated.1qgrihb1gzjmuy10dic5u1lpma9o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qgrihb1gzjmuy10dic5u1lpma9o'>
+            <column datatype='integer' name='[AQI]' role='measure' type='quantitative' />
+            <column caption='avarage Aqi' datatype='real' name='[Calculation_1960473243115020300]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(AQI)/COUNT([Date])' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[county Name]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[county Name]' derivation='None' name='[none:county Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1960473243115020300]' derivation='User' name='[usr:Calculation_1960473243115020300:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:county Name:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:county Name:nk]' member='&quot;Fresno&quot;' />
+              <groupfilter function='member' level='[none:county Name:nk]' member='&quot;Inyo&quot;' />
+              <groupfilter function='member' level='[none:county Name:nk]' member='&quot;Lake&quot;' />
+              <groupfilter function='member' level='[none:county Name:nk]' member='&quot;Riverside&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[yr:Date:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Date:ok]' member='2009' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2010' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2011' />
+              <groupfilter function='member' level='[yr:Date:ok]' member='2012' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:county Name:nk]</column>
+            <column>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[yr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:county Name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[usr:Calculation_1960473243115020300:qk]</rows>
+        <cols>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[tmn:Date:qk]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='false' fill-type='fill-missing' ignore-last='1' model-type='auto-season' range-periods='Year-Trunc' range-size='1' range-type='next' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{D276155D-D8C8-4E3D-ACED-976F22EE9ADD}' />
+    </worksheet>
+    <worksheet name='fireCA'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>wildfires California</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wildfires' name='federated.1qgrihb1gzjmuy10dic5u1lpma9o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qgrihb1gzjmuy10dic5u1lpma9o'>
+            <column datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[STATE]' derivation='Count' name='[cnt:STATE:qk]' pivot='key' type='quantitative' />
+            <column datatype='date' name='[date(CONT_DATE)]' role='dimension' type='ordinal' />
+            <column-instance column='[date(CONT_DATE)]' derivation='Month-Trunc' name='[tmn:date(CONT_DATE):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date(CONT_DATE)]' derivation='Year' name='[yr:date(CONT_DATE):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[yr:date(CONT_DATE):ok]'>
+            <groupfilter from='1992' function='range' level='[yr:date(CONT_DATE):ok]' to='2015' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[yr:date(CONT_DATE):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[tmn:date(CONT_DATE):qk]' scope='cols' value='date' />
+            <format attr='title' class='0' field='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[cnt:STATE:qk]' scope='rows' value='number of fires' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[cnt:STATE:qk]</rows>
+        <cols>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[tmn:date(CONT_DATE):qk]</cols>
+      </table>
+      <simple-id uuid='{889FD8DE-96E4-4145-88F8-DDEB6509D4B3}' />
+    </worksheet>
+    <worksheet name='forcast'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>2050 forecast</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wildfires' name='federated.1qgrihb1gzjmuy10dic5u1lpma9o' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1qgrihb1gzjmuy10dic5u1lpma9o'>
+            <column datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[STATE]' derivation='Count' name='[cnt:STATE:qk]' pivot='key' type='quantitative' />
+            <column datatype='date' name='[date(CONT_DATE)]' role='dimension' type='ordinal' />
+            <column-instance column='[STATE]' derivation='Count' forecast-column-base='[cnt:STATE:qk]' forecast-column-type='forecast-value' name='[fVal:cnt:STATE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date(CONT_DATE)]' derivation='Month-Trunc' name='[tmn:date(CONT_DATE):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[tmn:date(CONT_DATE):qk]' included-values='in-range'>
+            <min>#1992-01-01 00:00:00#</min>
+            <max>#2015-12-01 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[tmn:date(CONT_DATE):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[tmn:date(CONT_DATE):qk]' scope='cols' value='date' />
+            <format attr='title' class='0' field='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[fVal:cnt:STATE:qk]' scope='rows' value='number of fires' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:STATE:nk]' />
+              <color column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:Forecast Indicator:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[fVal:cnt:STATE:qk]</rows>
+        <cols>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[tmn:date(CONT_DATE):qk]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='1' model-type='auto-season' range-periods='Year-Trunc' range-size='34' range-type='next' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{584693E6-31A8-4DB4-A6E8-B88E591A2746}' />
+    </worksheet>
+    <worksheet name='wildfireGraph'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wildfires' name='federated.1qgrihb1gzjmuy10dic5u1lpma9o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qgrihb1gzjmuy10dic5u1lpma9o'>
+            <column datatype='string' name='[COUNTY]' role='dimension' type='nominal' />
+            <column-instance column='[COUNTY]' derivation='Count' name='[cnt:COUNTY:qk]' pivot='key' type='quantitative' />
+            <column datatype='date' name='[date(CONT_DATE)]' role='dimension' type='ordinal' />
+            <column-instance column='[COUNTY]' derivation='None' name='[none:COUNTY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date(CONT_DATE)]' derivation='Month-Trunc' name='[tmn:date(CONT_DATE):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date(CONT_DATE)]' derivation='Year' name='[yr:date(CONT_DATE):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:COUNTY:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:COUNTY:nk]' member='&quot;Inyo&quot;' />
+              <groupfilter function='member' level='[none:COUNTY:nk]' member='&quot;Riverside&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[yr:date(CONT_DATE):ok]'>
+            <groupfilter function='member' level='[yr:date(CONT_DATE):ok]' member='2015' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[yr:date(CONT_DATE):ok]</column>
+            <column>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:COUNTY:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:COUNTY:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[cnt:COUNTY:qk]</rows>
+        <cols>[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[tmn:date(CONT_DATE):qk]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='false' fill-type='fill-missing' ignore-last='0' model-type='auto-season' range-periods='Year-Trunc' range-size='7' range-type='end-of' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{41C9EB96-71BD-468A-8C97-15CD0F532E45}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='69'>
+    <window class='worksheet' maximized='true' name='Wildfires'>
+      <cards>
+        <edge name='left'>
+          <strip size='108'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='44'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card type='currpage' />
+            <card pane-specification-id='0' param='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[sum:FIRE_SIZE:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[sum:FIRE_SIZE:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2010-03-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{83492228-DC5A-414F-BFB5-208EC1DDA149}' />
+    </window>
+    <window class='worksheet' name='air Quality'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card size='5' type='pages' />
+            <card size='0' type='filters' />
+            <card size='48' type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card type='currpage' />
+            <card pane-specification-id='1' param='[federated.0sw2w0q0vkazve1cdjwpa1f20x8h].[usr:Calculation_297237604399964161:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2007-12-01 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{E3CC50DC-E329-48EB-936F-9C4C4AF43FC6}' />
+    </window>
+    <window class='worksheet' name='airQualityGraph'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:county Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B2690846-FE6A-4CC4-9AA0-8F103A5484D4}' />
+    </window>
+    <window class='worksheet' name='wildfireGraph'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:COUNTY:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{17608E59-A1FD-4961-B5E4-8C89E7A5215A}' />
+    </window>
+    <window class='worksheet' name='forcast'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:STATE:nk]&#10;[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{204C04A7-EFAB-4290-BBB7-C253B980605A}' />
+    </window>
+    <window class='worksheet' name='fireCA'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D4D83F13-E056-447A-A7E8-6AA54FC3553F}' />
+    </window>
+    <window class='worksheet' name='airCA'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{00369EC4-D2C5-4EFD-B105-6D13571AF213}' />
+    </window>
+    <window class='worksheet' name='acreCA'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1qgrihb1gzjmuy10dic5u1lpma9o].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E04B38EC-70C9-400F-9617-A5A6D2836CA8}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DD0AC228-D596-4309-8A38-D19198293852}' />
+    </window>
+  </windows>
+</workbook>
